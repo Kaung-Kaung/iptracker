@@ -1,8 +1,22 @@
 <html>
   <head>
+       
+           <meta name="viewport" content="width=device-width, initial-scale=1">     
     <style>
-      .title{
+    
+    
+      body{
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
+       background-color: white;
+       border-radius: 4px;
+       box-shadow: 1px 1px 1px 1px #9e9e9e;
+      }
+      #head{
+        color: pink;
+        
       }
       #link{
         color: #2196f3;
@@ -11,15 +25,53 @@
         margin-right: 100px;
         border: 2px solid black;
       }
+      
+      button{
+        height: 50px;
+        width: 100px;
+        color: white;
+        font-size: 14px;
+        background-color: #2196f3;
+        border:none;
+        border-radius: 4px;
+      }
+      
+      .preview{
+        background-color: grey;
+        color: white;
+        border-radius: 4px;
+        margin: 20px;
+        padding: 10px;
+        }
+        
+        .Ad{
+          position: fixed;
+          bottom: 0;
+          left: 0;
+        }
+      
     </style>
+      <script src= 
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+
+    </script> 
+ <script>
+      $.getJSON("https://api.ipify.org?format=json", 
+function(data) { 
+  $("#paster").html(data.ip); 
+ }) 
+ </script> 
+    
   </head>
-  <body
-  <div class="title">
-    <h2>
-      IP Tacker in HTML
+  <body class="tit>"
+  <div >
+    <h2 id="head">
+      <q>
+      IP Tracker
+      </q>
     </h2>
     </div>
-    <hr>
+    
     <b>
     <p>
       IP Addressကို trackလုပ်ဖို့အတွက် javaမှာ<q><i> HTTP request
@@ -31,26 +83,37 @@
      ကိုသုံးပြီး IP trackလိုက်လို့ရပါတယ်။
     </p>
     </b>
+    
+    <div class="preview">
+      <p>
+        Your ip address :
+      </p>
+       <p id="paster"
+       ></p>
+      
+    </div>
+    
+    
   <p>
     အသေးစိတ်လေ့လာနိုင်ဖို့အတွက် IP Track HTML fileလေးကိုဒေါင်းလုတ်ဆွဲလိုက်ပါ။
     
   </p>
   
-
-  <p id="link">
-   https://ouo.io/bp16sI
-  </p>
+<a href=" https://ouo.io/bp16sI">
+ 
+    <button>
+      Download </button>
+    </a>
     
-      <div>
-    <img src="https://media2.giphy.com/media/BMPSCLh0SQxvGQ81uP/giphy.gif" alt=""
-    width="100px" height="100px"
-    />
-    
-  </div>
-  
-  <p>
-    Linkကို copyယူ၊ VPNတစ်ခုခုချိတ် Browserမှာpasteချပြီး ဒေါင်းလုတ်ဆွဲပါ။
-  </p>
+ <div class="Ad">
+   <a href="https://bit.ly/3xy3hKJ">
+     <img
+     src="https://i.imgur.com/EgZNWdH.gif"
+     alt="" width="100%" height="100px"
+     />
+   </a>
+   
+ </div>
     
   </body>
 </html>
